@@ -156,6 +156,15 @@ pipeline {
             steps {
                 sh '''
                     cd infra/terraform
+
+
+		    cat > terraform.tfvars << 'EOF'
+aws_region = "us-east-1"
+key_name   = "nexus-secops-key"
+my_ip_cidr = "0.0.0.0/0"
+ami_id     = "ami-0f8a61b66d1accaee"
+EOF
+
                     terraform init
                     terraform validate
                     terraform plan -out=tfplan
