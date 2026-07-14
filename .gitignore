@@ -22,3 +22,15 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# SecOps generated files
+.scannerwork/
+reports/
+**/target/
+3_FrontEnd/NexusFrontEnd/dist/
+
+# Terraform generated/local files
+infra/terraform/.terraform/
+infra/terraform/*.tfplan
+infra/terraform/tfplan
+infra/terraform/terraform.tfvars
