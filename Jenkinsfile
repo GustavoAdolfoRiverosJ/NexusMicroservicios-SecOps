@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        APP_URL = 'http://34.235.119.223/NexusFrontEnd/'
-        GATEWAY_HEALTH_URL = 'http://34.235.119.223:9080/NexusGateway/actuator/health'
+        APP_URL = 'http://3.93.25.12/NexusFrontEnd/'
+        GATEWAY_HEALTH_URL = 'http://3.93.25.12:9080/NexusGateway/actuator/health'
         SONAR_HOST_URL = 'http://localhost:9000'
         SONAR_PROJECT_KEY = 'NexusMicroservicios'
-        WAZUH_URL = 'https://3.85.147.147'
-        PROMETHEUS_URL = 'http://3.85.147.147:9090'
-        GRAFANA_URL = 'http://3.85.147.147:3000'
+        WAZUH_URL = 'https://54.157.208.255'
+        PROMETHEUS_URL = 'http://54.157.208.255:9090'
+        GRAFANA_URL = 'http://54.157.208.255:3000'
         AWS_REGION = 'us-east-1'
     }
 
